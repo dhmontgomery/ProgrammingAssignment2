@@ -3,6 +3,8 @@
 
 ## makeCacheMatrix provides a list of functions that cacheSolve can use to either return or calculate and cache the inverse of a matrix. It also resets i, which stores the inverted matrix, to NULL to ensure proper results when a matrix is solved.
 
+## Thanks to DanieleP for insight into how to understand the processes at work in these functions.
+
 makeCacheMatrix <- function(x = matrix()) {
 		i <- NULL
 		set <- function(y) {
